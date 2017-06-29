@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .rejectsContainer {
+        padding-top: 20px;
+    }
+
+    .rejectRow {
+        width: 33%;
+        padding: 15px;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .good {
+        background-color: green;
+    }
+
+    .bad {
+        background-color: red;
+    }
+
+    .pulled {
+        background-color: black;
+    }
+
+    .packNumber {
+        font-weight: bold;
+    }
+</style>
+
+<div data-test-page="rejectsTab"></div>
+
+<div class="rejectsContainer" id="rejectsContainer">
+</div>
+
+<script>
+    var unsavedElements = new Array();
+    function addBadPack(packNumber)
+    {
+        var $element = $('<div class="rejectRow bad"><div class="status">Bad</div><div class="packNumber">'+packNumber+'</div></div>');
+        $("#rejectsContainer").append($element);
+        unsavedElements.push($element);
+    }
+
+    function addPack(packNumber, status)
+    {
+        $(".rejectRow:contains('"+packNumber+"')").remove();  // remove the existing element if there is one
+        var $element = $('<div class="rejectRow '+status.toLowerCase()+'"><div class="status">'+status+'</div><div class="packNumber">'+packNumber+'</div></div>');
+        $("#rejectsContainer").append($element);
+        unsavedElements.push($element);
+    }
+
+    function refresh() {
+        for(var i in unsavedElements)
+        {
+            unsavedElements[i].remove();
+        }
+        unsavedElements = new Array();
+    }
+
+    function saveChanges() {
+        unsavedElements = new Array();
+    }
+</script>

@@ -1,0 +1,11 @@
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\Specs.dll.config
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\Specs.dll
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\Specs.pdb
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\nunit.framework.dll
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\TechTalk.SpecFlow.dll
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\WebDriver.dll
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\nunit.framework.xml
+C:\Projects\RejectsAutomatedTesting\Specs\bin\Debug\WebDriver.xml
+C:\Projects\RejectsAutomatedTesting\Specs\obj\Debug\Specs.dll
+C:\Projects\RejectsAutomatedTesting\Specs\obj\Debug\Specs.pdb
+C:\Projects\RejectsAutomatedTesting\Specs\obj\Debug\Specs.csprojResolveAssemblyReference.cache
